@@ -1,3 +1,7 @@
+
+
+
+
 <!DOCTYPE html>
 <html lang="pt">
     <head>
@@ -14,59 +18,6 @@
     <!--<style> body{background: rgb(36,74,110);
 background: linear-gradient(90deg, rgba(36,74,110,1) 37%, rgba(36,74,110,0.9640231092436975) 75%, rgba(36,74,110,0.8071603641456583) 98%);};</style>
     -->
-
-    <style>
-      /* Estilos para o menu */
-  .menu {
-      position: relative;
-      display: inline-block;
-  }
-  
-  .menu-item {
-      position: relative;
-  }
-  
-  /* Estilo para a opção principal */
-  .main-option {
-      padding: 10px 20px;
-      text-decoration: none;
-      color: #333;
-      background-color: #023047;
-      display: block;
-      border-radius: 5px;
-  }
-  
-  /* Estilo para o submenu */
-  .submenu {
-      display: none; /* Esconde as opções adicionais por padrão */
-      position: absolute;
-      top: 100%;
-      left: 0;
-      background-color: #023047;
-      border-radius: 5px;
-      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-      z-index: 1;
-  }
-  
-  .submenu-option {
-      padding: 10px 20px;
-      text-decoration: none;
-      color: #333;
-      display: block;
-      white-space: nowrap;
-  }
-  
-  .submenu-option:hover {
-      background-color: #023047;
-  }
-  
-  /* Mostra o submenu ao passar o mouse sobre a opção principal */
-  .menu-item:hover .submenu {
-      display: block;
-  }
-  
-     </style>
-
 </head>
 
 
@@ -78,7 +29,7 @@ background: linear-gradient(90deg, rgba(36,74,110,1) 37%, rgba(36,74,110,0.96402
   <!-- <img src="img/images.jfif" alt="" style="position: absolute; width: 100%; z-index: -1">-->
     <div class="container">
     <div class="logo">
-      <a href="homerj.html"> <img src="img/Grupo-Gmill-300x300.png" height="50px"></a>
+      <a href="home.html"> <img src="img/Grupo-Gmill-300x300.png" height="50px"></a>
     </div>
       <div class="titulo">
       <p style="margin-left: 15px"><strong> Painel de Indicadores - Logística RJ</strong></p>
@@ -124,21 +75,21 @@ background: linear-gradient(90deg, rgba(36,74,110,1) 37%, rgba(36,74,110,0.96402
                      <a href="http://www.gmill.com.br/portal/" style="margin-left: 2px;"   target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16"></svg>
                       <strong> <p>Site Gmill</p> </strong></a>
                       <!--<path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"></path>-->
-               
-                      <a href="registroerrosrj.html" style="margin-left: 2px; text-decoration: none; color: #b2f0b3;"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16"></svg>
+                              
+                      <a href="registroerros.html" style="margin-left: 2px; text-decoration: none; color: #b2f0b3;"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16"></svg>
                         <strong> <p>Reportar Erro</p> </strong></a>
                          
                       <button class="sair" onclick="sair()"><strong> Sair</strong></button>
+
                       <div class="menu">
                         <div class="menu-item">
                             <a href="#" class="main-option">Alterar CD</a>
                             <div class="submenu">
-                                <a href="home.html" class="submenu-option">Acesso Gral</a>
                                 <a href="homees.html" class="submenu-option">Somente CD-ES</a>
+                                <a href="homerj.html" class="submenu-option">Somente CD-RJ</a>
                             </div>
                         </div>
-                    </div>
-                    </svg> 
+    </svg> 
     </div>
                 </div>
 
@@ -147,6 +98,7 @@ background: linear-gradient(90deg, rgba(36,74,110,1) 37%, rgba(36,74,110,0.96402
           </nav>
 </div>
 
+ 
           <main>
             <div class="barra2">
               <div class="barra">
@@ -154,7 +106,7 @@ background: linear-gradient(90deg, rgba(36,74,110,1) 37%, rgba(36,74,110,0.96402
             <div class="indicadores1">
               <div class="linha"></div>
               <a href="homerj.html">
-                <div class="ind1" style="background-color: #b2f0b3; color: #023047; font-weight: bold; border-radius: none;">
+                <div class="ind1">
                  <img src="img/geral.png "   style=" height: 30px;">
                  <p>Indicadores <br> Operacionais RJ</p>
                </div></a>
@@ -179,18 +131,19 @@ background: linear-gradient(90deg, rgba(36,74,110,1) 37%, rgba(36,74,110,0.96402
                     </div></a>
                     <div class="linha"></div>
                     <a href="produtividaderj.html">
-                        <div class="ind1">
-                          <img src="img/acess.png" style="height: 30px;">
-                          <p>Produtividade RJ</p>
-                    </div></a>
-                    <div class="linha"></div>
+                      <div class="ind1">
+                        <img src="img/acess.png" style="height: 30px;">
+                        <p>Produtividade RJ</p>
+                      </div></a>
+                      <div class="linha"></div>
                       <a href="Transportesrj.html">
-                        <div class="ind1">
+                    <div class="ind1" style="background-color: #b2f0b3; color: #023047; font-weight: bold; border-radius: none;">
                           <img src="img/trans.png" style="height: 30px;">
                           <p>Transportes</p>
                         </div></a>
                         <div class="linha"></div>
-                        <a href="https://planejamentorj.github.io/tv/" target="_blank">
+                        <a href="https://planejamentorj.github.io/tv/
+" target="_blank">
                           <div class="ind1">
                             <img src="img/tv.png" style="height: 30px;">
                             <p>Slide TV - RJ</p>
@@ -220,22 +173,16 @@ background: linear-gradient(90deg, rgba(36,74,110,1) 37%, rgba(36,74,110,0.96402
 
          <div class="opa2">     
     <div class="containerr" style="margin-top: 10px;">
-      <div class="containerr" style="margin-top: 10px;">
-      <!--  <p>Não disponível</p>-->
-      <iframe title="ID GMILL - Abradilan"  width="1000" height="590.5" style="background-color: white;" src="https://app.powerbi.com/view?r=eyJrIjoiODJmYTYxZmItMTQ2YS00Njc3LThmOTAtZTIzNjg0ODc0MzM4IiwidCI6IjkzYjUyZTQwLWM1NDgtNGU3Yi04MDg4LTNkZGRhNTFjMDExZCJ9" frameborder="0" allowFullScreen="true"></iframe>
-     </div>
+
+      <iframe title="SLA transportadoraS"  width="1000" height="580.5" style="background-color: white;" src="https://app.powerbi.com/view?r=eyJrIjoiYjM3NjEyZjYtYjE3My00ZDAxLThjZDAtNGVhN2MyYzI0OWJlIiwidCI6IjkzYjUyZTQwLWM1NDgtNGU3Yi04MDg4LTNkZGRhNTFjMDExZCJ9" frameborder="0" allowFullScreen="true"></iframe>
+    </div>
   </div>
 </div>
 </div>
       </main>
-      <script>
-        // Verifica se o usuário tem acesso à home
-        if (localStorage.getItem('nivel') !== 'Acesso RJ' && localStorage.getItem('nivel') !== 'Acesso geral') {
-    // Redireciona para a página de login caso o nível de acesso seja inválido
-    alert('Você não tem permissão para acessar esta página.');
-    location.href = 'index.html';
-}
-      </script>      
+      
+
+
 
       <script>
         function mostrarOpcoes() {
@@ -265,3 +212,4 @@ background: linear-gradient(90deg, rgba(36,74,110,1) 37%, rgba(36,74,110,0.96402
     
     </body>
     </html>
+
