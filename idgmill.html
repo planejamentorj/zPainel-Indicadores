@@ -205,5 +205,21 @@ background: linear-gradient(90deg, rgba(36,74,110,1) 37%, rgba(36,74,110,0.96402
     </script>
 
     
+ <!-- GIF no canto -->
+<img src="img/comfy-emote.gif" alt="Animação" class="gif-canto">
+
+<style>
+.gif-canto {
+    position: fixed;
+    bottom: 20px;    /* distância da parte inferior */
+    right: 20px;     /* distância da lateral direita */
+    width: 120px;    /* tamanho do GIF */
+    z-index: 9999;   /* garante que fique acima de tudo */
+    pointer-events: none; /* evita que o GIF bloqueie cliques em botões abaixo */
+}
+</style>
+
+   
     </body>
     </html>
+
