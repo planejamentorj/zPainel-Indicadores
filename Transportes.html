@@ -7,7 +7,7 @@
     <head>
     <title>Home</title>
     <meta charset="UTF-8">
-    <title> Biblioteca Virtual </title>
+    <title></title>
     <link rel="icon" href="img/Grupo-Gmill-300x300.png" type="image/x-icon">
     <link rel="stylesheet" href="estilo.css">
     <script>
@@ -202,21 +202,67 @@ background: linear-gradient(90deg, rgba(36,74,110,1) 37%, rgba(36,74,110,0.96402
     </script>
 
     
- <!-- GIF no canto -->
-<img src="img/comfy-emote.gif" alt="Animação" class="gif-canto">
+<!-- Container do GIF e texto -->
+<div class="gif-container">
+  <img id="gif-dia" alt="Animação do dia" class="gif-canto">
+  <p id="texto-dia" class="texto-gif"></p>
+</div>
 
 <style>
-.gif-canto {
+/* Container com o GIF e o texto */
+.gif-container {
     position: fixed;
-    bottom: 20px;    /* distância da parte inferior */
-    right: 20px;     /* distância da lateral direita */
-    width: 120px;    /* tamanho do GIF */
-    z-index: 9999;   /* garante que fique acima de tudo */
-    pointer-events: none; /* evita que o GIF bloqueie cliques em botões abaixo */
+    bottom: 20px;
+    right: 20px;
+    width: 150px;
+    text-align: center;
+    z-index: 9999;
+}
+
+/* O GIF */
+.gif-canto {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* O texto em cima do GIF */
+.texto-gif {
+    position: absolute;
+    bottom: 100%; /* posiciona o texto logo acima do GIF */
+    right: 0;
+    left: 0;
+    margin-bottom: 5px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+    font-family: Arial, sans-serif;
 }
 </style>
 
+<script>
+// Pega o dia da semana atual (0 = domingo, 1 = segunda, ... 6 = sábado)
+const dia = new Date().getDay();
+
+// Seletores
+const gif = document.getElementById("gif-dia");
+const texto = document.getElementById("texto-dia");
+
+// GIFs por dia
+const gifs = {
+  1: { src: "img/segunda.gif", texto: "Segunda-feira 🫩" },
+  2: { src: "img/terca.gif", texto: "Terça-feira 😵‍💫" },
+  3: { src: "img/quarta.gif", texto: "Quarta-feira 🤯" },
+  4: { src: "img/quinta.gif", texto: "Quinta-feira 😬" },
+  5: { src: "img/sexta.gif", texto: "Sexta-feira 💃🕺" },
+  6: { src: "img/fimdesemana.gif", texto: "Sábado! 🌞" },
+  0: { src: "img/fimdesemana.gif", texto: "Domingo 😴" }
+};
+
+// Define o GIF e o texto
+gif.src = gifs[dia].src;
+texto.textContent = gifs[dia].texto;
+</script>
    
     </body>
     </html>
-
